@@ -257,6 +257,127 @@
 
 \end{frame}
 
+\begin{frame}{Implications?}
+  \begin{beamercolorbox}[wd=\textwidth, rounded=false, shadow=false, sep=0.2cm]{block body}
+    Last times:\\
+    \only<1->{
+  \begin{center}
+    $\mathcal{L}\rho = \dot{\rho} = -i[H+H_{\text{Ls}}, \rho] + 
+    \sum_{\omega,k}\varsigma_k(\omega) \Bigl( \, L_k(\omega)\rho L_k^\dag (\omega) -
+    \frac{1}{2} \bigl\{L_k^\dag(\omega) L_k(\omega), \rho \bigr\}\, \Bigr)$\\
+  \end{center}
+}
+\only<2->{
+  With the diagonalized elements $L_k(\omega) = \sum_l U_{lk} S_l(\omega)$ and \\
+  \begin{center}
+    $S_l(\omega) = \sum_{\omega = \epsilon' - \epsilon} \Pi_\epsilon S_l \Pi_{\epsilon'} \equiv 
+    \sum_{\omega = \epsilon' - \epsilon} \outerprod{\epsilon}{\epsilon}S_l\outerprod{\epsilon'}{\epsilon'}$
+  \end{center}
+}
+  \end{beamercolorbox}
+  \only<3->{
+\vspace{0.1cm}
+  \begin{beamercolorbox}[wd=\textwidth, rounded=false, shadow=false, sep=0.2cm]{block body}
+    In the literature in question - \\
+    \begin{center}
+    $\mathcal{L}\rho = -i[H,\rho]  + \sum_\mu \Bigl( 2\tilde{L}_\mu \rho 
+    \tilde{L}_\mu^\dag - \bigl\{ \tilde{L}_\mu^\dag \tilde{L}_\mu, \rho \bigr\} \Bigr) $
+    \end{center}
+\end{beamercolorbox}
+  }
+
+
+\vspace{0.1cm}
+  \only<4->{
+  \begin{beamercolorbox}[wd=\textwidth, rounded=false, shadow=false, sep=0.2cm]{block body}
+    One may try to suggest to go from the 2nd to the 1st:\\
+    \begin{center}
+      $H \mapsto H+H_{\text{Ls}} \quad \mu \mapsto (\omega, k) \quad \implies \quad \tilde{L}_{\mu = (\omega, k)} 
+      \mapsto \sqrt{\frac{\varsigma_k(\omega)}{2}} L_k(\omega)$
+  \end{center}
+\end{beamercolorbox}
+  }
+
+\end{frame}
+
+\begin{frame}{Implications?}
+  \begin{beamercolorbox}[wd=\textwidth, rounded=false, shadow=false, sep=0.2cm]{block body}
+    Using the definitions:\\
+    \only<1->{
+      $$L_\mu \mapsto \sqrt{\frac{\varsigma_k(\omega)}{2}} L_k(\omega) = 
+      \sqrt{\frac{\varsigma_k(\omega)}{2}}\sum_{\omega = \epsilon'-\epsilon} \outerprod{\epsilon}{\epsilon}
+      L_k \outerprod{\epsilon'}{\epsilon'}$$
+    }
+  \end{beamercolorbox}
+
+\vspace{0.5cm}
+    \only<2->{
+  \begin{beamercolorbox}[wd=\textwidth, rounded=false, shadow=false, sep=0.2cm]{block body}
+    For an operator $A$ such that $[H,A]=\lambda A$ and $[L_\mu, A]=[L_\mu^\dag, A] = 0$, 
+    $$ \Biggl[\sum_{\omega=\epsilon'-\epsilon} \outerprod{\epsilon}{\epsilon}
+    L_k \outerprod{\epsilon'}{\epsilon'}, \,A\Biggr] = \Biggl[ 
+\sum_{\omega=\epsilon'-\epsilon} \outerprod{\epsilon'}{\epsilon'}
+    L_k^\dag \outerprod{\epsilon}{\epsilon}, \,A
+  \Biggr] = 0 $$
+  which must be hold $\forall \omega, k$
+  \end{beamercolorbox}
+    }
+
+\end{frame}
+
+\begin{frame}{Implications?}
+
+    \only<1->{
+  \begin{beamercolorbox}[wd=\textwidth, rounded=false, shadow=false, sep=0.2cm]{block body}
+    For an operator $A$ such that $[H,A]=\lambda A$ and $[L_\mu, A]=[L_\mu^\dag, A] = 0$, 
+    $$ \Biggl[\sum_{\omega=\epsilon'-\epsilon} \outerprod{\epsilon}{\epsilon}
+    L_k \outerprod{\epsilon'}{\epsilon'}, \,A\Biggr] = \Biggl[ 
+\sum_{\omega=\epsilon'-\epsilon} \outerprod{\epsilon'}{\epsilon'}
+    L_k^\dag \outerprod{\epsilon}{\epsilon}, \,A
+  \Biggr] = 0 $$
+  which must be hold $\forall \omega, k$
+  \end{beamercolorbox}
+    }
+
+  \begin{beamercolorbox}[wd=\textwidth, rounded=false, shadow=false, sep=0.2cm]{block body}
+\only<2->{
+    How about the condition on $H$? That is, $[H, A]=\lambda A$. One suggested: 
+    $$[H, A] \mapsto [H+H_{\text{Ls}}] \quad \implies \quad [H+H_\text{Ls}] = \lambda A$$ 
+    }
+\only<3->{
+    How to interpret $A$?
+  }
+    \begin{itemize}
+      \item<4-> Symmetry generator? (angular momentum, energy)
+      \item<4-> Ladders? 
+      \item<5-> Example: $[L_z, L_\pm]=\pm \hbar L_\pm \; $, $\qquad[H, a^\dag ]=\hbar \omega a^\dag$
+    \end{itemize}
+  \end{beamercolorbox}
+
+\end{frame}
+\begin{frame}{Implications?}
+  \only<1->{
+  \begin{beamercolorbox}[wd=\textwidth, rounded=false, shadow=false, sep=0.2cm]{block body}
+    Let us recall again:
+    $$ \Biggl[\sum_{\omega=\epsilon'-\epsilon} \outerprod{\epsilon}{\epsilon}
+    L_k \outerprod{\epsilon'}{\epsilon'}, \,A\Biggr] = \Biggl[ 
+\sum_{\omega=\epsilon'-\epsilon} \outerprod{\epsilon'}{\epsilon'}
+    L_k^\dag \outerprod{\epsilon}{\epsilon}, \,A
+  \Biggr] = 0 $$
+  \end{beamercolorbox}
+}
+
+
+\begin{itemize}
+  \item<2-> Can we expand more?
+  \item<3-> Is $L_k$ Hermitian? How are $A$ and $L_k$ related?
+  \item<4-> Remember the definition of $L_k$ - unitary transform of $S_k$, defined via 
+    $H_{\text{int}} = \sum_k S_k \otimes B_k$. Thus $\Hint = \Hint^\dag$, $S_k$ - not 
+    necessarily hermitian.
+\end{itemize}
+
+\end{frame}
+
 \end{document}
 
 
